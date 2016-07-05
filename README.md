@@ -5,10 +5,6 @@ This extension provides a [MailGun](http://www.mailgun.com/) mail solution for [
 
 For license information check the [LICENSE](LICENSE.md)-file.
 
-[![Latest Stable Version](https://poser.pugx.org/bsadnu/yii2-swiftmailer/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-swiftmailer)
-[![Total Downloads](https://poser.pugx.org/bsadnu/yii2-swiftmailer/downloads.png)](https://packagist.org/packages/yiisoft/yii2-swiftmailer)
-[![Build Status](https://travis-ci.org/bsadnu/yii2-swiftmailer.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-swiftmailer)
-
 Installation
 ------------
 
@@ -17,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yiisoft/yii2-swiftmailer
+php composer.phar require --prefer-dist bsadnu/yii2-mailgunmailer
 ```
 
 or add
 
 ```json
-"yiisoft/yii2-swiftmailer": "~2.0.0"
+"bsadnu/yii2-mailgunmailer": "~2.0.0"
 ```
 
 to the require section of your composer.json.
@@ -53,5 +49,3 @@ Yii::$app->mailer->compose('contact/html')
      ->setSubject($form->subject)
      ->send();
 ```
-
-For further instructions refer to the [related section in the Yii Definitive Guide](http://www.yiiframework.com/doc-2.0/guide-tutorial-mailing.html).
