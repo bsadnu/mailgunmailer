@@ -1,0 +1,25 @@
+{
+    "name": "bsadnu/yii2-mailgunmailer",
+    "description": "The MailGun integration for the Yii 2 framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "mailgun", "mail", "email", "mailer", "mailgunmailer"],
+    "license": "BSD-2-Clause",
+    "support": {
+        "source": "https://github.com/bsadnu/yii2-mailgunmailer"
+    },    
+    "authors": [
+        {
+            "name": "Stanislav Bannikov",
+            "email": "stasbannikov@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.4",
+        "mailgun/mailgun-php": "~1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "bsadnu\\mailgunmailer\\": ""
+        }
+    }
+}
