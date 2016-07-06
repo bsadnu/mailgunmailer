@@ -11,18 +11,12 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*",
-        "mailgun/mailgun-php": "~1.7"
+        "yiisoft/yii2": ">=2.0.4",
+        "mailgun/mailgun-php": "~1.8"
     },
     "autoload": {
         "psr-4": {
             "bsadnu\\mailgunmailer\\": ""
         }
-    },
-    "repositories":[
-        {
-            "type": "git",
-            "url": "https://github.com/bsadnu/yii2-mailgunmailer"
-        }
-    ]    
+    }    
 }
