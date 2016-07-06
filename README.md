@@ -1,6 +1,8 @@
 MailGun Extension for Yii 2
 ===============================
 
+[![Latest Stable Version](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/v/stable)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer) [![Total Downloads](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/downloads)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer) [![Latest Unstable Version](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/v/unstable)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer) [![License](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/license)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer)
+
 This extension provides a [MailGun](http://www.mailgun.com/) mail solution for [Yii framework 2.0](http://www.yiiframework.com).
 
 For license information check the [LICENSE](https://github.com/bsadnu/yii2-mailgunmailer/blob/master/LICENSE)-file.
