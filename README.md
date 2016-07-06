@@ -34,8 +34,8 @@ To use this extension,  simply add the following code in your application config
     ...
     'mailer' => [
         'class' => 'bsadnu\mailgunmailer\Mailer',
-        'key' => 'key-example',
-        'domain' => 'mg.example.com',
+        'key' => 'MailGun API Key',
+        'domain' => 'domain.name',
     ],
     ...
 ],
@@ -44,9 +44,14 @@ To use this extension,  simply add the following code in your application config
 You can then send an email as follows:
 
 ```php
-Yii::$app->mailer->compose('contact/html', ['contactForm' => $form])
-    ->setFrom('from@domain.com')
-    ->setTo($form->email)
-    ->setSubject($form->subject)
+Yii::$app
+    ->mailer
+    ->compose(
+        ['html' => 'someTemplate-html', 'text' => 'someTemplate-text'],
+        ['someVariable' => $someVariable]
+    )
+    ->setFrom('from@example.com')
+    ->setTo('to@example.com')
+    ->setSubject('Some subject')
     ->send();
 ```
