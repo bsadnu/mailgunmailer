@@ -5,8 +5,6 @@ MailGun Extension for Yii 2
 
 This extension provides a [MailGun](http://www.mailgun.com/) mail solution for [Yii framework 2.0](http://www.yiiframework.com).
 
-For license information check the [LICENSE](https://github.com/bsadnu/yii2-mailgunmailer/blob/master/LICENSE)-file.
-
 Installation
 ------------
 
@@ -57,3 +55,7 @@ Yii::$app
     ->setSubject('Some subject')
     ->send();
 ```
+
+## License
+
+**yii2-mailgunmailer** is released under the BSD 2-Clause License. See the bundled [LICENSE](https://github.com/bsadnu/yii2-mailgunmailer/blob/master/LICENSE) for details.
