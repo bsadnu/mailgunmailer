@@ -33,6 +33,7 @@ use \Mailgun\Mailgun;
  *     ->setSubject($form->subject)
  *     ->send();
  * ~~~
+ * @author Stanislav Bannikov <bsadnu@gmail.com>
  */
 class Mailer extends BaseMailer
 {

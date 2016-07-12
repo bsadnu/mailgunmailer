@@ -10,6 +10,7 @@ use Mailgun\Messages\MessageBuilder;
 
 /**
  * Message implements a message class based on Mailgun.
+ * @author Stanislav Bannikov <bsadnu@gmail.com>
  */
 class Message extends BaseMessage
 {
