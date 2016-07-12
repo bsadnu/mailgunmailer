@@ -1,9 +1,9 @@
 MailGun Extension for Yii 2
 ===============================
 
-This extension provides a [MailGun](http://www.mailgun.com/) mail solution for [Yii framework 2.0](http://www.yiiframework.com).
+[![Latest Stable Version](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/v/stable)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer) [![Total Downloads](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/downloads)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer) [![Latest Unstable Version](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/v/unstable)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer) [![License](https://poser.pugx.org/bsadnu/yii2-mailgunmailer/license)](https://packagist.org/packages/bsadnu/yii2-mailgunmailer)
 
-For license information check the [LICENSE](LICENSE.md)-file.
+This extension provides a [MailGun](http://www.mailgun.com/) mail solution for [Yii framework 2.0](http://www.yiiframework.com).
 
 Installation
 ------------
@@ -34,8 +34,8 @@ To use this extension,  simply add the following code in your application config
     ...
     'mailer' => [
         'class' => 'bsadnu\mailgunmailer\Mailer',
-        'key' => 'key-example',
-        'domain' => 'mg.example.com',
+        'key' => 'MailGun API Key',
+        'domain' => 'domain.name',
     ],
     ...
 ],
@@ -44,9 +44,18 @@ To use this extension,  simply add the following code in your application config
 You can then send an email as follows:
 
 ```php
-Yii::$app->mailer->compose('contact/html', ['contactForm' => $form])
-    ->setFrom('from@domain.com')
-    ->setTo($form->email)
-    ->setSubject($form->subject)
+Yii::$app
+    ->mailer
+    ->compose(
+        ['html' => 'someTemplate-html', 'text' => 'someTemplate-text'],
+        ['someVariable' => $someVariable]
+    )
+    ->setFrom('from@example.com')
+    ->setTo('to@example.com')
+    ->setSubject('Some subject')
     ->send();
 ```
+
+## License
+
+**yii2-mailgunmailer** is released under the BSD 2-Clause License. See the bundled [LICENSE](https://github.com/bsadnu/yii2-mailgunmailer/blob/master/LICENSE) for details.
