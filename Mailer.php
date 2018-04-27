@@ -85,6 +85,7 @@ class Mailer extends BaseMailer
 
     /**
      * Creates Mailgun instance.
+     *
      * @return Mailgun Mailgun instance.
      * @throws InvalidConfigException if required params are not set.
      */
